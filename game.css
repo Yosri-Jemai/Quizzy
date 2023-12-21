@@ -1,0 +1,66 @@
+body{
+  color: #fff;
+}
+
+.choice-container{
+  display: flex;
+  margin-bottom: 0.6rem;
+  width: 100%;
+  border-radius: 4px;
+  background: rgb(18,93,255);
+  font-size: 2.2rem;
+  min-width: 70rem;
+}
+.choice-container:hover{
+  cursor: pointer;
+  box-shadow: 0 0.3rem 1.2rem 0 rgba(6,103,247,0.5);
+  transform: scale(1.02);
+  transition: transform 100ms;
+}
+.choice-prefix{
+  padding: 1.2rem 2.5rem;
+  color: white;
+}
+.choice-text{
+  padding: 1.2rem;
+  width: 100%;
+}
+.correct {
+  background: lightgreen;
+}
+.incorrect {
+  background: red;
+}
+
+#display{
+  display: flex;
+  justify-content: space-between;
+}
+.display-prefix{
+  text-align: center;
+  font-size: 1.6rem;
+}
+.display-main-text{
+  text-align: center;
+}
+#progressBar{
+  width: 16rem;
+  height: 2.4rem;
+  border: 0.16rem solid rgb(11,233,36);
+  margin-top: 1.6rem;
+  border-radius: 50px;
+  overflow:hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .choice-container{
+    min-width: 32rem;
+    
+  }
+}
+@media screen and (max-width: 480px) {
+  .choice-container{
+    min-width: 20rem;
+    
+  }
+}
